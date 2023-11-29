@@ -1,6 +1,14 @@
-const Square = (props) => {
+import { useState } from "react";
 
-  return <button className="square">{props.value}</button>
+const Square = (props) => {
+  const [value, setValue] = useState(null);
+
+  const handleClick = (event) => {
+    event.preventDefault();
+    setValue("X");
+  };
+
+  return <button className="square" onClick={handleClick}>{value}</button>
 };
 
 export default Square;
