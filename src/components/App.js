@@ -1,9 +1,10 @@
 import './App.css';
+import Board from './Board';
 
 const App = () => {
   return (
     <div className="App">
-      <h1>It works!</h1>
+      <Board />
     </div>
   );
 }
