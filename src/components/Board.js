@@ -1,7 +1,9 @@
 import Square from "./Square";
-
+import { useState } from "react";
 
 const Board = () => {
+
+  const [squares, setSquares] = useState(Array(9).fill(null));
 
   return (
     <div>
