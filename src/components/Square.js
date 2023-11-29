@@ -1,14 +1,8 @@
-import { useState } from "react";
+const Square = ({ onSquareClick, value }) => {
 
-const Square = (props) => {
-  const [value, setValue] = useState(null);
 
-  const handleClick = (event) => {
-    event.preventDefault();
-    setValue("X");
-  };
 
-  return <button className="square" onClick={handleClick}>{value}</button>
+  return <button className="square" onClick={onSquareClick}>{value}</button>
 };
 
 export default Square;
